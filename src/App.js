@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react';
 import { commerce } from './libs/commerce';
 import { Products,Navbar,Cart,Checkout,Footer } from './components';
 import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';
+import { Divider } from '@material-ui/core';
 
 const App = () => {
     const [products, setProducts] = useState([]);
@@ -91,9 +92,12 @@ const App = () => {
                 </Route>
                 
             </Switch>
-            
+            <br /><br />
+            <Divider />
+            <br /><br />
+            <Footer></Footer>
         </div>
-        <Footer></Footer>
+        
         </Router>
         
     )
